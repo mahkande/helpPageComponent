@@ -74,6 +74,7 @@ body {
 
 .help-center .dropdown-container li {
   margin-bottom: 25px;
+  border-bottom: 2px solid #dee4f1;
 }
 
 .help-center .dropdown-container li:last-child {
@@ -86,7 +87,6 @@ body {
   align-items: flex-start;
   height: 51px;
   padding-top: 3px;
-  border-bottom: 2px solid #dee4f1;
   font-size: 18px;
   color: #202842;
   cursor: pointer;
@@ -105,9 +105,13 @@ body {
   display: none;
 }
 
+.help-center .dropdown-container li input:checked + label img {
+  transform: rotate(-180deg);
+}
+
 .help-center .dropdown-container li input:checked + label + .dropdown-content {
   max-height: 50vh;
-  padding: 15px 0;
+  padding-bottom: 20px;
 }
 
 .help-center .help-articles {
